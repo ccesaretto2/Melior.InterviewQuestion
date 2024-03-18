@@ -1,9 +1,12 @@
-﻿namespace Melior.InterviewQuestion.Types
+﻿using System;
+
+namespace Melior.InterviewQuestion.Types
 {
+    [Flags]
     public enum PaymentScheme
     {
-        FasterPayments,
-        Bacs,
-        Chaps
+        FasterPayments = 1 << 0,
+        Bacs = 1 << 1,
+        Chaps = 1 << 2
     }
 }
