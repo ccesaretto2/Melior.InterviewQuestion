@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Melior.InterviewQuestion.Data
 {
-    public class AccountDataLoader : IAccountDataLoader
+    public class AccountDataStoreLoader : IAccountDataStoreLoader
     {
         public IAccountDataStore GetCurrentAccountDataStore()
         {
